@@ -1,0 +1,53 @@
+{
+  "info": {
+    "name": "API Gestão de Resíduos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Verificar API",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/"
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\": \"admin@residuos.com\", \"senha\": \"senha123\"}"
+        },
+        "url": "http://localhost:3000/login"
+      }
+    },
+    {
+      "name": "Listar usuários",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/usuarios"
+      }
+    },
+    {
+      "name": "Listar ocorrências",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/ocorrencias"
+      }
+    },
+    {
+      "name": "Resumo",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/resumo"
+      }
+    }
+  ]
+}

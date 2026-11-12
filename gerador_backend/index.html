@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Back-end Node.js via SQL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Gerador de Back-end (SQL → Node.js)</h1>
+        
+        <label for="projectName">Nome da Pasta Raiz do Projeto:</label>
+        <input type="text" id="projectName" value="backend_residuos">
+
+        <label for="sqlInput">Cole seu código SQL abaixo:</label>
+        <textarea id="sqlInput" placeholder="CREATE TABLE usuario (id INT PRIMARY KEY, nome VARCHAR(100));&#10;CREATE TABLE ocorrencia (id INT PRIMARY KEY, descricao TEXT);"></textarea>
+
+        <div class="botoes">
+            <button id="btnGerar">Gerar Comando para Terminal (CMD)</button>
+            <button id="btnCopiar" class="btn-copy">Copiar Comando</button>
+        </div>
+
+        <label for="cmdOutput">Cole este comando no Terminal (CMD) do VS Code:</label>
+        <textarea id="cmdOutput" readonly placeholder="O comando aparecerá aqui..."></textarea>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
